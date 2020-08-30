@@ -35,7 +35,12 @@ class TutorialHome extends StatelessWidget {
       ),
       // body is the majority of the screen.
       body: Center(
-        child: Counter(),
+        child: Column(
+          children: [
+            Counter(),
+            MyButton()
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: 'Add', // used by assistive technologies
